@@ -1,0 +1,333 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  src: url('/css/fonts/SpoqaHanSansRegular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  src: url('/css/fonts/SpoqaHanSansBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  vertical-align: top;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans Bold', 'Sans-serif';
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  line-height: 1.6;
+  color: #888;
+}
+
+/* 공통 */
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  z-index: 9999;
+}
+
+.header a {
+  color: #fff;
+}
+
+.header .inner {
+  position: relative;
+  height: 96px;
+}
+
+.h-left {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 96px;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  top: 24px;
+  width: 129px;
+  height: 48px;
+  background: url('../images/logo.svg') no-repeat center;
+  background-size: contain;
+  font-size: 0px;
+}
+
+.gnb {
+  position: absolute;
+  left: 150px;
+  top: 40px;
+  display: block;
+}
+
+.menu {
+  position: relative;
+  display: block;
+}
+
+.menu li {
+  float: left;
+  margin-left: 23px;
+}
+
+.menu li a {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* 헤더오른쪽 */
+.h-right {
+  display: block;
+  float: right;
+  width: 50%;
+  height: 96px;
+}
+
+.community {
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+  right: 120px;
+  display: block;
+}
+
+.community ul {
+  float: left;
+  font-size: 14px;
+}
+
+.c-notice {
+  position: relative;
+  display: block;
+}
+
+.community li {
+  position: relative;
+  display: block;
+  float: left;
+  margin-left: 18px;
+}
+
+.c-member {
+  position: relative;
+  display: block;
+}
+
+.shop-icon {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 24px;
+}
+
+.shop-icon li {
+  position: relative;
+  display: block;
+  float: left;
+  width: 48px;
+  height: 48px;
+}
+
+.i-cart {
+  position: relative;
+  display: block;
+  background: url('../images/cart_icon.svg') no-repeat center;
+  background-size: cover;
+}
+
+.i-list {
+  position: relative;
+  display: block;
+  background: url('../images/menu_icon.svg') no-repeat center;
+  background-size: cover;
+}
+
+/* visual */
+.visual {
+  position: relative;
+  display: block;
+  height: 560px;
+  background: url('../images/main_visual_1.png') no-repeat center;
+  margin-top: 96px;
+}
+
+/* event */
+.benefit {
+  position: relative;
+  display: block;
+  padding: 50px 0;
+}
+
+.benefit .inner {
+  height: 176px;
+}
+
+.b-box {
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+
+.b-list {
+  position: relative;
+  display: block;
+  float: left;
+  width: 49%;
+}
+
+.b-freedeli {
+  position: relative;
+  display: block;
+  float: left;
+  width: 51%;
+  background: url('../images/freshplan.9fe4775.png') no-repeat left;
+  background-size: cover;
+}
+
+/* bestitem */
+.bestitem {
+  position: relative;
+  display: block;
+}
+
+.bestitem h2 {
+  position: relative;
+  display: block;
+  margin: 33px 0;
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.bestitem-list {
+  position: relative;
+  display: block;
+}
+
+.bestitem-list li {
+  position: relative;
+  display: block;
+  float: left;
+  width: calc(100% / 3);
+
+}
+
+.b-list-img {
+  position: relative;
+  display: block;
+  width: 376px;
+  height: 416px;
+}
+
+.img-1 {
+  background: #f9f7f8 url('../images/1pork.png') no-repeat center;
+  background-size: 75%;
+}
+
+.img-2 {
+  background: #f9f7f8 url('../images/2chicken.png') no-repeat center;
+  background-size: 75%;
+}
+
+.img-3 {
+  background: #f9f7f8 url('../images/3porkcutlet.png') no-repeat center;
+  background-size: 75%;
+}
+
+.img-4 {
+  background: #f9f7f8 url('../images/4egg.png') no-repeat center;
+  background-size: 75%;
+}
+
+.img-5 {
+  background: #f9f7f8 url('../images/5milk.png') no-repeat center;
+  background-size: 75%;
+}
+
+.img-6 {
+  background: #f9f7f8 url('../images/6hanu.png') no-repeat center;
+  background-size: 75%;
+}
+
+.b-list-name {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+.b-list-price {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #9b9b9b;
+  font-weight: normal;
+}
+
+/* shopping */
+.shopping {
+  position: relative;
+  display: block;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  display: block;
+}
