@@ -3,9 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel=icon href='images/favicon16.png ' sizes=16x16>
+  <link rel=icon href='images/favicon32.png ' sizes=32x32>
+  <link rel=icon href='images/favicon192.png' sizes=192x192>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>정육각 :: 언제나 초신선</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="js/swiper/swiper.min.css">
+  <script src="js/swiper/swiper.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
 </head>
@@ -13,6 +20,15 @@
 <body>
   <!-- 전체 레이아웃 -->
   <div class="wrap">
+    <!-- popup -->
+    <section class="ad-popup">
+      <div class="inner">
+        <div class="ad">
+          <img src="images/top-ad.png" alt="">
+          <a href="#" class="ad-close"></a>
+        </div>
+      </div>
+    </section>
     <!-- header -->
     <header class="header">
       <div class="inner clearfix">
@@ -31,7 +47,7 @@
             <ul class="c-notice clearfix">
               <li><a href="#">공지사항</a></li>
               <li><a href="#">고객센터</a></li>
-              <li>|</li>
+              <li><span class="notice-line"></span></li>
               <li><a href="#">로그인</a></li>
               <li><a href="#">회원가입</a></li>
             </ul>
@@ -56,15 +72,57 @@
     <!-- event -->
     <section class="benefit">
       <div class="inner clearfix">
-        <div class="b-box b-list"></div>
-        <div class="b-box b-freedeli"></div>
+        <div class="b-box b-list">
+          
+          <div class="swiper-container sw-visual">
+            <!-- 슬라이드내용 -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-1"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-2"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-3"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-4"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-5"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-6"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="sw-visual-7"></a>
+              </div>
+            </div>
+            <!-- 슬라이드 좌우버튼 -->
+            <div class="sw-bt clearfix">
+            <button class="sw-visual-prev">
+            </button>
+            <button class="sw-visual-next">
+            </button>
+          </div>
+            <!-- 컨트롤 -->
+            <div class="sw-benefit-control">
+              <!-- Pagination -->
+              <div class="sw-benefit-pg"></div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="b-box b-freedeli">
+        </div>
       </div>
     </section>
     <!-- bestitem -->
     <section class="bestitem">
       <div class="inner">
         <h2>정육각 베스트 상품</h2>
-        <ul class="bestitem-list">
+        <ul class="bestitem-list clearfix">
           <li>
             <a href="#">
               <span class="b-list-img img-1"></span>
@@ -73,6 +131,7 @@
                 <span class="b-list-price">기준가 23.400원/600g</span>
               </p>
             </a>
+            <a href="#" class="bestitem-list-cart"></a>
           </li>
           <li>
             <a href="#">
@@ -82,6 +141,7 @@
                 <span class="b-list-price">기준가 6.700원/950g</span>
               </p>
             </a>
+            <a href="#" class="bestitem-list-cart"></a>
           </li>
           <li>
             <a href="#">
@@ -91,6 +151,7 @@
                 <span class="b-list-price">기준가 11.800원/770g</span>
               </p>
             </a>
+            <a href="#" class="bestitem-list-cart"></a>
           </li>
           <li>
             <a href="#">
@@ -100,6 +161,8 @@
                 <span class="b-list-price">기준가 6.900원/12구</span>
               </p>
             </a>
+            <a href="#" class="bestitem-list-cart"></a>
+            <div class="bestitem-list-non"></div>
           </li>
           <li>
             <a href="#">
@@ -109,6 +172,8 @@
                 <span class="b-list-price">기준가 3.600원/900ml</span>
               </p>
             </a>
+            <a href="#" class="bestitem-list-cart"></a>
+            <div class="bestitem-list-non"></div>
           </li>
           <li>
             <a href="#">
@@ -118,17 +183,70 @@
                 <span class="b-list-price">기준가 15.300원/180g</span>
               </p>
             </a>
+            <a href="#" class="bestitem-list-cart"></a>
+            <div class="bestitem-list-non"></div>
           </li>
         </ul>
       </div>
     </section>
     <!-- shopping -->
-    <section class="shopping">
-
+    <section class="gotoshopping">
+      <div class="inner">
+        <a href="#"></a>
+      </div>
     </section>
     <!-- footer -->
     <footer class="footer">
-
+      <div class="inner">
+        <div class="f-top clearfix">
+          <div class="f-top-left">
+            <ul class="f-top-left-menu clearfix">
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#"><b>개인정보처리방침</b></a></li>
+            </ul>
+          </div>
+          <div class="f-top-right">
+            <ul class="f-top-right-menu clearfix">
+              <li><button><span>정육각 앱 설치</span></button></li>
+              <li><a href="#"><img src="images/kakao.svg" alt=""></a></li>
+              <li><a href="#"><img src="images/insta.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="inner">
+        <div class="f-bottom clearfix">
+          <div class="f-bottom-left">
+            <img src="../images/footerlogo.svg" alt="">
+            <p>
+              (주)정육각 대표이사: 김재연 <span class="textline"></span> 주소: 경기도 김포시 고촌읍 아라육로57번길 126 <br />
+              사업자등록번호 : 224-87-00271 <a href="#" class="f-blue-a">[조회]</a><span class="textline"></span>통신판매업신고번호:
+              2021-경기김포-0668 <br />
+              개인정보관리책임자: 박준태(privacy@yookgak.com)
+              <span class="copy">&copy; 2021 Jeongyookgak Inc. All rights reserved.</span>
+            </p>
+          </div>
+          <div class="f-bottom-right">
+            <p>
+              <h3>고객센터</h3>
+              <h2>1800-0658</h2>
+            </p>
+            <p>
+              평일: 08:30 - 17:30<br>
+              점심: 12:30 - 13:30<br>
+              (토, 일 및 공휴일 휴무)
+            </p>
+            <p class="contact">카카오톡: <a href="#" class="f-blue-a">@정육각</a></p>
+            <p class="contact">이메일: <a href="#" class="f-blue-a">help@yookgak.com</a></p>
+            <ul class="qna clearfix">
+              <li><a href="#">자주묻는질문</a></li>
+              <li><a href="#">1:1 문의</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
