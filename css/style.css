@@ -15,8 +15,9 @@
 }
 
 @font-face {
-  font-family: 'modal-font';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-family: "modal-font";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+    format("woff2");
 }
 
 * {
@@ -73,9 +74,10 @@ body {
   transform: translate(-50%, -50%);
   width: 500px;
   height: 320px;
+  color: #333;
   background-color: #f8f8f8;
   border-radius: 20px;
-  padding: 13px 20px;
+  padding: 5px 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 
@@ -186,9 +188,6 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 /* //modal */
-
-
-
 
 /* 공통 */
 .inner {
