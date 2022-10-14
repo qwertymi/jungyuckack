@@ -1,4 +1,4 @@
-# jungyuckack
+# 정육각
 ▪ 𝘝𝘐𝘌𝘞 𝘞𝘖𝘙𝘒<br>
 https://qwertymi.github.io/jungyuckack/<br>
 <br>
